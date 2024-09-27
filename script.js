@@ -61,6 +61,7 @@ submitBtn.addEventListener(
             alert("Correct Arming Code");
             alert("Planting...");
         setTimout(function() {
+            document.getElementById('plantingsound').autoplay = true;
             document.getElementById('plantingsound').muted = false;
             document.getElementById('plantingsound').play();
         }, 1000)
