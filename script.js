@@ -59,9 +59,10 @@ submitBtn.addEventListener(
             correctPin
         ) {
             alert("Correct Arming Code");
-        setTimout(function() {
-            document.getElementById('plantingsound').play();
             alert("Planting...");
+        setTimout(function() {
+            document.getElementById('plantingsound').muted = false;
+            document.getElementById('plantingsound').play();
         }, 1000)
         setTimeout(function() {
             document.getElementById('planted').play(); 
