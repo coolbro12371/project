@@ -59,12 +59,13 @@ submitBtn.addEventListener(
             correctPin
         ) {
             alert("Correct Arming Code");
-            function planting() {
+            setTimout(function() {
+                alert("Planting...");
                 document.getElementById('plantingsound').play();
-            }
-            setTimeout(planting, 1000)
-            alert("Planting...");
-            setTimeout(40000);
+            }, 1000)
+            setTimeout(function() {
+                document.getElementById('planted').play(); 
+            }, 3200)
         } else {
             alert("Incorrect PIN");
         }
