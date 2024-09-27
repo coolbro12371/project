@@ -60,8 +60,8 @@ submitBtn.addEventListener(
         ) {
             alert("Correct Arming Code");
             setTimout(function() {
-                alert("Planting...");
                 document.getElementById('plantingsound').play();
+                alert("Planting...");
             }, 1000)
             setTimeout(function() {
                 document.getElementById('planted').play(); 
