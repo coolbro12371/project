@@ -1,5 +1,7 @@
 // Script.js
 // Correct Pin Value
+var plantingaudio = new Audio('sounds/plantingsound1.mp3');
+var plantedaudio = new Audio('sounds/planted2.mp3');
 let correctPin = "1234";
 
 let btns =
@@ -61,13 +63,12 @@ submitBtn.addEventListener(
             alert("Correct Arming Code");
             alert("Planting...");
         setTimout(function() {
-            document.getElementById('plantingsound').autoplay = true;
-            document.getElementById('plantingsound').muted = false;
-            document.getElementById('plantingsound').play();
+            plantingaudio.play();
         }, 1000)
         setTimeout(function() {
-            document.getElementById('planted').play(); 
+            plantedaudio.play();
         }, 3200)
+            setTimeout(function, 40000)
         } else {
             alert("Incorrect PIN");
         }
