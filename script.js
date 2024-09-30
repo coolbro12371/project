@@ -75,12 +75,14 @@ submitBtn.addEventListener(
                 var beepingaudio = new Audio('sounds/beeping4.mp3');
                 beepingaudio.play();
             }
-            const button10 = document.getElementByClassName("button100");
-            button10.onclick = function stopAudio() {
+            function stopBomb() {
+            const button1 = document.getElementByClassName("button100");
+            button1.addEventListener("click", function() {
             beepingaudio.pause();
             beepingaudio.currentTime = 0;
-            button10.addEventListener("click", stopBomb);
-            button10.onclick = stopBomb
+            }
+            beepingaudio.pause();
+            beepingaudio.currentTime = 0;
             }
 
         } else {
