@@ -68,6 +68,7 @@ submitBtn.addEventListener(
             function audio2() {
                 var plantedaudio = new Audio('sounds/planted2.mp3');
                 plantedaudio.play();
+                alert("...");
             }
             setTimeout(audio2, 3200);
         } else {
