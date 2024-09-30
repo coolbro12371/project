@@ -63,14 +63,13 @@ submitBtn.addEventListener(
                 var plantingaudio = new Audio('sounds/plantingsound1.mp3');
                 plantingaudio.play();
                 alert("Planting...");
+                setTimeout(audio2, 3200);
             }
             setTimeout(audio1, 1000);
             function audio2() {
                 var plantedaudio = new Audio('sounds/planted2.mp3');
                 plantedaudio.play();
-                alert("...");
             }
-            setTimeout(audio2, 3200);
         } else {
             alert("Incorrect PIN");
         }
