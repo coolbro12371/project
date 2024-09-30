@@ -68,7 +68,6 @@ submitBtn.addEventListener(
             var plantedaudio = new Audio('sounds/planted2.mp3');
             plantedaudio.play();
         }, 3200)
-            setTimeout(function, 40000)
         } else {
             alert("Incorrect PIN");
         }
