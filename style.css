@@ -19,9 +19,9 @@
 
 .card-header {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     margin: 10px;
-    text-align: right;
+    text-align: center;
 }
 
 .row {
@@ -53,6 +53,6 @@
     border-radius: 10px;
     height: 1.5em;
     font-size: 1.5em;
-    text-align: right;
+    text-align: center;
     width: 80%;
 }
