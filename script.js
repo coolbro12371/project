@@ -64,16 +64,16 @@ submitBtn.addEventListener(
                 plantingaudio.play();
                 alert("Planting...");
                 setTimeout(audio2, 3200);
-                setTimeout(audio3, 40000);
             }
             setTimeout(audio1, 1000);
             function audio2() {
                 var plantedaudio = new Audio('sounds/planted2.mp3');
                 plantedaudio.play();
+                setTimeout(audio4, 100);
             }
-            function audio3() {
-                var explodedaudio = new Audio('sounds/exploded3.mp3');
-                explodedaudio.play();
+            function audio4() {
+                var beepingaudio = new Audio('sounds/beeping4.mp3');
+                beepingaudio.play();
             }
         } else {
             alert("Incorrect PIN");
