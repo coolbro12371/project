@@ -4,7 +4,7 @@ let correctPin = "1234";
 
 let btns =
     function clicksound() {
-        var sound = new  Audio('sounds/keypress.wav');  
+        var sound = new  Audio('sounds/keypress1.wav');  
         sound.play();
     }
     document.getElementsByClassName(
