@@ -19,7 +19,7 @@
 
 .card-header {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     margin: 10px;
     text-align: center;
 }
