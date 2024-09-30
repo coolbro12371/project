@@ -3,9 +3,13 @@
 let correctPin = "1234";
 
 let btns =
+    function clicksound() {
+        var sound = new  Audio('sounds/keypress.wav');  
+        sound.play();
+    }
     document.getElementsByClassName(
         "pinpad-btn"
-    );
+    )[0].addEventListener("click", clicksound);
 let pinInput = document.getElementById(
     "pinpad-input"
 );
