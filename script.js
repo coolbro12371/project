@@ -75,6 +75,11 @@ submitBtn.addEventListener(
                 var beepingaudio = new Audio('sounds/beeping4.mp3');
                 beepingaudio.play();
             }
+            submitBtn.addEventListener("click", function stopAudio() {
+                beepingaudio.pause();
+                beepingaudio.currentTime = 0;
+            });
+
         } else {
             alert("Incorrect PIN");
         }
