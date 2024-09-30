@@ -1,6 +1,6 @@
 // Script.js
 // Correct Pin Value
-let correctPin = "1234";
+let correctPin = "7355608";
 
 let btns =
     document.getElementsByClassName(
@@ -79,7 +79,7 @@ submitBtn.addEventListener(
             alert("Incorrect PIN");
         }
         // Reset the input
-        pinInput.value = "";
+        pinInput.value = "*******";
     }
 );
 
