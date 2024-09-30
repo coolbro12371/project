@@ -59,15 +59,17 @@ submitBtn.addEventListener(
             correctPin
         ) {
             alert("Correct Arming Code");
-            alert("Planting...");
-        setTimout(function() {
-            var plantingaudio = new Audio('sounds/plantingsound1.mp3');
-            plantingaudio.play();
-        }, 1000)
-        setTimeout(function() {
-            var plantedaudio = new Audio('sounds/planted2.mp3');
-            plantedaudio.play();
-        }, 3200)
+            function audio1() {
+                var plantingaudio = new Audio('sounds/plantingsound1.mp3');
+                plantingaudio.play();
+                alert("Planting...");
+            }
+            setTimeout(audio1, 1000);
+            function audio2() {
+                var plantedaudio = new Audio('sounds/plantedsound2.mp3');
+                plantedaudio.play();
+            }
+            setTimeout(audio2, 3200);
         } else {
             alert("Incorrect PIN");
         }
