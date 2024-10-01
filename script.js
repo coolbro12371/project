@@ -1,6 +1,7 @@
 // Script.js
 // Correct Pin Value
 let correctPin = "7355608";
+let defusePin = "834734";
 
 let btns =
     document.getElementsByClassName(
@@ -74,6 +75,12 @@ submitBtn.addEventListener(
             function audio4() {
                 var beepingaudio = new Audio('sounds/beeping4.mp3');
                 beepingaudio.play();
+            }
+            if (pinInput.value === defusePin) {
+                function audio5() {
+                    var defusingaudio = new Audio('sounds/defusing5.mp3');
+                    defusingaudio.play();
+                }
             }
         } else {
             alert("Incorrect PIN");
