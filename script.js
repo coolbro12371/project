@@ -76,19 +76,23 @@ submitBtn.addEventListener(
                 var beepingaudio = new Audio('sounds/beeping4.mp3');
                 beepingaudio.play();
             }
-            if (pinInput.value === defusePin) {
-                 function audio5() {
+        
+        } else if (
+            pinInput.value ===
+            defusePin
+        ) {
+            function audio5() {
                     var defusingaudio = new Audio('sounds/defusing5.mp3');
                     defusingaudio.play();
                     alert("Defusing...")
                     setTimeout(audio6, 10000)
                 }
-            }
             function audio6() {
                 var defusedaudio = new Audio('sounds/defused6.mp3')
                 defusedaudio.play();
             }
-        } else {
+        }
+        else {
             alert("Incorrect PIN");
         }
 
