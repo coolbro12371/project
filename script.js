@@ -56,7 +56,7 @@ submitBtn.addEventListener(
                 "Please enter the arming code first!"
             );
         }
-        if (
+        else if (
             pinInput.value === defusePin
         ) {
             setTimeout(audio5, 100;)
