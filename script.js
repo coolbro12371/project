@@ -55,7 +55,23 @@ submitBtn.addEventListener(
             alert(
                 "Please enter the arming code first!"
             );
-        } else if (
+        }
+        if (
+            pinInput.value === defusePin
+        ) {
+            setTimeout(audio5, 100;)
+            function audio5() {
+                var defusingaudio = new Audio('sounds/defusing5.mp3');
+                defusingaudio.play();
+                alert("Defusing...")
+                setTimeout(audio6, 10000)
+            }
+            function audio6() {
+                var defusedaudio = new Audio('sounds/defused6.mp3')
+                defusedaudio.play();
+            }
+        }
+        else if (
             pinInput.value ===
             correctPin
         ) {
@@ -77,20 +93,6 @@ submitBtn.addEventListener(
                 beepingaudio.play();
             }
         
-        } else if (
-            pinInput.value ===
-            defusePin
-        ) {
-            function audio5() {
-                var defusingaudio = new Audio('sounds/defusing5.mp3');
-                defusingaudio.play();
-                alert("Defusing...")
-                setTimeout(audio6, 10000)
-                }
-            function audio6() {
-                var defusedaudio = new Audio('sounds/defused6.mp3')
-                defusedaudio.play();
-            }
         }
         else {
             alert("Incorrect PIN");
