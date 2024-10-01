@@ -77,23 +77,8 @@ submitBtn.addEventListener(
             }
         } else {
             alert("Incorrect PIN");
-        } if (
-                !pinInput ||
-                !pinInput.value ||
-                pinInput.value === "834734"
-            ) {
-            setTimeout(audio5, 100)
-            function audio5() {
-                var defuseaudio = new Audio('sounds/defusing5.mp3');
-                defuseaudio.play();
-                setTimeout(audio6, 10000)
-            }
-            }
-            function audio6() {
-                var defusedaudio = new Audio('sounds/defused6.mp3')
-                defusedaudio.play();
-                beepingaudio.pause();
-            }
+        }
+
             
         
         // Reset the input
