@@ -75,12 +75,13 @@ submitBtn.addEventListener(
                 var beepingaudio = new Audio('sounds/beeping4.mp3');
                 beepingaudio.play();
             }
+            function defuse() {
             if(document.getElementById('button999').clicked == true) {
                beepingaudio.muted = true;
-                if beepingaudio.muted = true{
-                    alert("Defusing..");
-                }
+                beepingaudio.muted = true;
+                alert("Defusing..");
             }
+        }
         } else {
             alert("Incorrect PIN");
         }
