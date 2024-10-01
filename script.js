@@ -76,7 +76,7 @@ submitBtn.addEventListener(
                 var beepingaudio = new Audio('sounds/beeping4.mp3');
                 beepingaudio.play();
             }
-            else if (pinInput.value === defusePin) {
+            if (pinInput.value === defusePin) {
                 alert("Defusing...")
                 function audio5() {
                     var defusingaudio = new Audio('sounds/defusing5.mp3');
