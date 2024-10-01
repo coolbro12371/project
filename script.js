@@ -93,11 +93,12 @@ submitBtn.addEventListener(
           function audio6() {
               var defusedaudio = new Audio('sounds/defused6.mp3');
               defusedaudio.play();
-              setTimeout(pause7, 10);
+              setTimeout(audio7, 10);
           }
-           function pause7() {
-               beepingaudio.pause();
-               beepingaudio.volume = 0;
+            function audio7() {
+                var beepingaudio = new Audio('sounds/beeping4.mp3');
+                beepingaudio.pause();
+                beepingaudio.volume = 0;
           }
         }
         else {
