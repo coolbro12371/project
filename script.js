@@ -59,15 +59,15 @@ submitBtn.addEventListener(
         else if (
             pinInput.value === defusePin
         ) {
-            setTimeout(audio5, 100;)
+            setTimeout(audio5, 100);
             function audio5() {
                 var defusingaudio = new Audio('sounds/defusing5.mp3');
                 defusingaudio.play();
-                alert("Defusing...")
-                setTimeout(audio6, 10000)
+                alert("Defusing...");
+                setTimeout(audio6, 10000);
             }
             function audio6() {
-                var defusedaudio = new Audio('sounds/defused6.mp3')
+                var defusedaudio = new Audio('sounds/defused6.mp3');
                 defusedaudio.play();
             }
         }
