@@ -82,10 +82,10 @@ submitBtn.addEventListener(
             defusePin
         ) {
             function audio5() {
-                    var defusingaudio = new Audio('sounds/defusing5.mp3');
-                    defusingaudio.play();
-                    alert("Defusing...")
-                    setTimeout(audio6, 10000)
+                var defusingaudio = new Audio('sounds/defusing5.mp3');
+                defusingaudio.play();
+                alert("Defusing...")
+                setTimeout(audio6, 10000)
                 }
             function audio6() {
                 var defusedaudio = new Audio('sounds/defused6.mp3')
