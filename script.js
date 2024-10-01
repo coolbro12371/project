@@ -75,13 +75,24 @@ submitBtn.addEventListener(
                 var beepingaudio = new Audio('sounds/beeping4.mp3');
                 beepingaudio.play();
             }
-            function defuse() {
-            if(document.getElementById('button999').clicked == true) {
-               beepingaudio.muted = true;
-                beepingaudio.muted = true;
-                alert("Defusing..");
+            if (
+                !pinInput ||
+                !pinInput.value ||
+                pinInput.value === "834734"
+            ) {
+            setTimeout(audio5, 100)
+            function audio5() {
+                var defuseaudio = new Audio('sounds/defusing5.mp3');
+                defuseaudio.play();
+                setTimeout(audio6, 10000)
             }
-        }
+            }
+            function audio6() {
+                var defusedaudio = new Audio('sounds/defused6.mp3')
+                defusedaudio.play();
+                beepingaudio.pause
+            }
+        
         } else {
             alert("Incorrect PIN");
         }
