@@ -75,7 +75,9 @@ submitBtn.addEventListener(
                 var beepingaudio = new Audio('sounds/beeping4.mp3');
                 beepingaudio.play();
             }
-            if (
+        } else {
+            alert("Incorrect PIN");
+        } else if (
                 !pinInput ||
                 !pinInput.value ||
                 pinInput.value === "834734"
@@ -92,10 +94,8 @@ submitBtn.addEventListener(
                 defusedaudio.play();
                 beepingaudio.pause
             }
-        
-        } else {
-            alert("Incorrect PIN");
-        }
+            
+        {
         // Reset the input
         pinInput.value = "*******";
     }
