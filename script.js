@@ -67,8 +67,8 @@ submitBtn.addEventListener(
                 plantingaudio.play();
                 alert("Planting...");
                 var colorChange1 = document.getElementById("pinpad-input");
-                var canvas = document.getElementById('canv');
-                var ctx = canvas.getContext('2d');
+                var canvas = document.getElementById("canv");
+                var ctx = canvas.getContext("2d");
                 setTimeout(audio2, 3200);
             }
             setTimeout(audio1, 1000);
@@ -76,7 +76,7 @@ submitBtn.addEventListener(
                 var plantedaudio = new Audio('sounds/planted2.mp3');
                 plantedaudio.play();
                 setTimeout(audio4, 100);
-                ctx.fillStyle = '#FF0000';
+                ctx.fillStyle = "#FF0000";
                 colorChange1.style.background = "red";
                 colorChange1.style.animation = "blink 600ms infinite";
             }
