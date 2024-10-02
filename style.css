@@ -6,7 +6,11 @@
 .container {
     width: 100%;
 }
-
+#canv {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 .card {
     border: 1px solid black;
     border-radius: 5px;
