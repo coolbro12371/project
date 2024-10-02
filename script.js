@@ -66,6 +66,8 @@ submitBtn.addEventListener(
                 var plantingaudio = new Audio('sounds/plantingsound1.mp3');
                 plantingaudio.play();
                 alert("Planting...");
+                var colorChange1 = document.getElementById("pinpad-input");
+                colorChange1.style.background = "red";
                 setTimeout(audio2, 3200);
             }
             setTimeout(audio1, 1000);
