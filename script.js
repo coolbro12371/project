@@ -67,8 +67,6 @@ submitBtn.addEventListener(
                 plantingaudio.play();
                 alert("Planting...");
                 var colorChange1 = document.getElementById("pinpad-input");
-                colorChange1.style.background = "red";
-                colorChange1.style.animation = "blink 50ms infinite";
                 setTimeout(audio2, 3200);
             }
             setTimeout(audio1, 1000);
@@ -76,6 +74,8 @@ submitBtn.addEventListener(
                 var plantedaudio = new Audio('sounds/planted2.mp3');
                 plantedaudio.play();
                 setTimeout(audio4, 100);
+                colorChange1.style.background = "red";
+                colorChange1.style.animation = "blink 600ms infinite";
             }
             function audio4() {
                 beepingaudio.play();
