@@ -93,12 +93,11 @@ submitBtn.addEventListener(
           function audio6() {
               var defusedaudio = new Audio('sounds/defused6.mp3');
               defusedaudio.play();
-              setTimeout(audio7, 10);
           }
             function audio7() {
                 beepingaudio.pause();
-                beepingaudio.volume = 0;
           }
+            setTimeout(audio7, 100);
         }
         else {
             alert("Incorrect PIN");
