@@ -97,7 +97,7 @@ submitBtn.addEventListener(
             function audio7() {
                 beepingaudio.pause();
           }
-            setTimeout(audio7, 100);
+            setTimeout(audio7, 10100);
         }
         else {
             alert("Incorrect PIN");
