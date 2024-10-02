@@ -1,5 +1,6 @@
 // Script.js
 // Correct Pin Value
+let colorChange1 = document.getElementById("pinpad-input");
 let beepingaudio = new Audio('sounds/beeping4.mp3');
 let correctPin = "7355608";
 let defusePin = "999999";
@@ -73,7 +74,6 @@ submitBtn.addEventListener(
                 var plantedaudio = new Audio('sounds/planted2.mp3');
                 plantedaudio.play();
                 setTimeout(audio4, 100);
-                var colorChange1 = document.getElementById("pinpad-input");
                 colorChange1.style.background = "red";
                 colorChange1.style.animation = "blink 600ms infinite";
             }
@@ -96,6 +96,8 @@ submitBtn.addEventListener(
           function audio6() {
               var defusedaudio = new Audio('sounds/defused6.mp3');
               defusedaudio.play();
+              colorChange1.style.background = "green";
+              colorChange1.style.animation = "none";
               setTimeout(audio7, 100);
           }
             function audio7() {
