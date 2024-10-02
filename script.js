@@ -1,5 +1,6 @@
 // Script.js
 // Correct Pin Value
+let beepingaudio = new Audio('sounds/beeping4.mp3');
 let correctPin = "7355608";
 let defusePin = "834734";
 
@@ -74,7 +75,6 @@ submitBtn.addEventListener(
                 setTimeout(audio4, 100);
             }
             function audio4() {
-                var beepingaudio = new Audio('sounds/beeping4.mp3');
                 beepingaudio.play();
             }
         
@@ -96,7 +96,6 @@ submitBtn.addEventListener(
               setTimeout(audio7, 10);
           }
             function audio7() {
-                var beepingaudio = new Audio('sounds/beeping4.mp3');
                 beepingaudio.pause();
                 beepingaudio.volume = 0;
           }
