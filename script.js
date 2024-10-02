@@ -2,7 +2,7 @@
 // Correct Pin Value
 let beepingaudio = new Audio('sounds/beeping4.mp3');
 let correctPin = "7355608";
-let defusePin = "834734";
+let defusePin = "999999";
 
 let btns =
     document.getElementsByClassName(
@@ -106,7 +106,7 @@ submitBtn.addEventListener(
             
         
         // Reset the input
-        pinInput.value = "*******";
+        pinInput.value = "999999";
     }
 );
 
