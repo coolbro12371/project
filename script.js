@@ -68,6 +68,7 @@ submitBtn.addEventListener(
                 alert("Planting...");
                 var colorChange1 = document.getElementById("pinpad-input");
                 colorChange1.style.background = "red";
+                colorChange1.style.animation = "blink 300ms infinite";
                 setTimeout(audio2, 3200);
             }
             setTimeout(audio1, 1000);
