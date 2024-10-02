@@ -17,11 +17,6 @@
     position: relative;
     z-index: 1;
 }
-#canv {
-  position: fixed;
-  top: 0;
-  left: 0;
-}
 .card-header {
     display: flex;
     justify-content: center;
@@ -52,6 +47,11 @@
 
 .pinpad-btn:hover {
     background-color: lightgray;
+}
+#canv {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 #pinpad-input {
     background: green;
