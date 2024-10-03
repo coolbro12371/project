@@ -10,6 +10,27 @@
 
 <body>
     <h2 class="text-center">This is a prop from CS:GO</h2>
+    <button style="position:absolute; bottom: 10%;left: 45%;
+    text-align:center;" id="btnclick">Click Here!</button>
+    <p style="position:absolute; bottom: 10%;left: 45%;
+    text-align:center;">
+	Button Clicked <span id="display">0</span> Times
+    </p>
+    <script>
+	let count = 0;
+	let btnclick = document.getElementById("btnclick");
+	let disp = document.getElementById("display");
+		
+	btnclick.onclick = function () {
+			count++;
+	disp.innerHTML = count;
+        if(count == 100) {
+            alert("You win.. nothing")
+        }
+        else if(count == 10){
+            alert("You got this 90 more to go! Note: You win nothing..")
+        }
+      </script>
         <canvas id='canv'></canvas>
         <div class="card">
             <script>
@@ -53,27 +74,6 @@
 
     setInterval(matrix, 50);
   </script>
-    <button style="position:absolute; bottom: 10%;left: 45%;
-    text-align:center;" id="btnclick">Click Here!</button>
-    <p style="position:absolute; bottom: 10%;left: 45%;
-    text-align:center;">
-	    Button Clicked <span id="display">0</span> Times
-	</p>
-	<script type="text/javascript">
-		let count = 0;
-		let btnclick = document.getElementById("btnclick");
-		let disp = document.getElementById("display");
-		
-		btnclick.onclick = function () {
-					count++;
-		disp.innerHTML = count;
-        if(count == 100) {
-            alert("You win.. nothing")
-        }
-        else if(count == 10){
-            alert("You got this 90 more to go! Note: You win nothing..")
-        }
-	</script>
             <div class="card-header">
                 <input type="password" text-align="right" value="*******"
                     id="pinpad-input"
