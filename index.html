@@ -9,7 +9,13 @@
 </head>
 
 <body>
+    <h2 class="text-center">This is a prop from CS:GO</h2>
         <canvas id='canv'></canvas>
+	<button id="btnclick" style="position:absolute; bottom: 10%;left: 45%;
+    	text-align:center;">Click Here!</button>
+    	<p style="position:absolute; width: 100%; bottom: 0; text-align:center;">
+		Button Clicked <span id="display">0</span> Times
+    	</p>
         <div class="card">
             <script>
                 const canvas = document.getElementById('canv');
@@ -18,10 +24,22 @@
                 const ctx = canvas.getContext('2d');
                 let cols = Math.floor(window.innerWidth / 20) + 1;
                 let ypos = Array(cols).fill(0);
+		let count = 0;
+		let btnclick = document.getElementById("btnclick");
+		let disp = document.getElementById("display");
 
                 ctx.fillStyle = '#000';
                 ctx.fillRect(0, 0, canvas.width, canvas.height);
 
+		btnclick.onclick = function () {
+			count++;
+		disp.innerHTML = count;
+        	if(count == 100) {
+            		alert("You win.. nothing")
+        	}
+        	else if(count == 10){
+            		alert("You got this 90 more to go! Note: You win nothing..")
+        	}
                 function matrix () {
                   const w = window.innerWidth;
                   const h = window.innerHeight;
@@ -52,28 +70,6 @@
 
     setInterval(matrix, 50);
   	    </script>
-	</div>
-    <h2 class="text-center">This is a prop from CS:GO</h2>
-    <button style="position:absolute; bottom: 10%;left: 45%;
-    text-align:center;" id="btnclick">Click Here!</button>
-    <p style="position:absolute; width: 100%; bottom: 0; text-align:center;">
-	Button Clicked <span id="display">0</span> Times
-    </p>
-    <script>
-	let count = 0;
-	let btnclick = document.getElementById("btnclick");
-	let disp = document.getElementById("display");
-		
-	btnclick.onclick = function () {
-			count++;
-	disp.innerHTML = count;
-        if(count == 100) {
-            alert("You win.. nothing")
-        }
-        else if(count == 10){
-            alert("You got this 90 more to go! Note: You win nothing..")
-        }
-      </script>
             <div class="card-header">
                 <input type="password" text-align="right" value="*******"
                     id="pinpad-input"
