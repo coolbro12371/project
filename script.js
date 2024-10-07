@@ -114,6 +114,7 @@ submitBtn.addEventListener(
         pinInput.value = "999999";
     }
 );
+
 delBtn.addEventListener("click", () => {
     if (pinInput.value)
         pinInput.value =
