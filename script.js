@@ -7,7 +7,7 @@ let defusePin = "999999";
 var view = !1; // holds boolean value of the show password input (default is false)
 
 const pass = [], // password array
-symbol = "@", // symbol to be used
+symbol = "*", // symbol to be used
 
 let btns =
     document.getElementsByClassName(
