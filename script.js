@@ -72,6 +72,16 @@ submitBtn.addEventListener(
             setTimeout(audio1, 1000);
             function audio2() {
                 var plantedaudio = new Audio('sounds/planted2.mp3');
+                var timeleft = 40;
+                var downloadTimer = setInterval(function(){
+                  if(timeleft <= 0){
+                    clearInterval(downloadTimer);
+                    document.getElementByClassName("Pass1000").innerHTML = "Boom!";
+                  } else {
+                    document.getElementByClassName("Pass1000").innerHTML = timeleft
+                  }
+                  timeleft -= 1;
+                }, 1000);
                 plantedaudio.play();
                 setTimeout(audio4, 100);
                 colorChange1.style.background = "red";
