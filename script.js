@@ -114,19 +114,6 @@ submitBtn.addEventListener(
         pinInput.value = "999999";
     }
 );
-var view = !1; // holds boolean value of the show password input (default is false)
-
-const pass = [], // password array
-symbol = "*", // symbol to be used
-// on input handler function
-inputHandle = (e)=>{
-    if(!e.data && e.inputType=="deleteContentBackward"){
-        pass.pop(); // if delete key pressed, remove last value
-    }else{
-        pass.push(e.data) //else add value pressed to array
-    }
-    e.target.value = view?pass.join(""):pass.map(i=>symbol).join("");
-}
 delBtn.addEventListener("click", () => {
     if (pinInput.value)
         pinInput.value =
